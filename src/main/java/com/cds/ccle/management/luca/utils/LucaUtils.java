@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
+//import javax.mail.internet.AddressException;
+//import javax.mail.internet.InternetAddress;
 
 public class LucaUtils {
 
@@ -76,6 +76,11 @@ public class LucaUtils {
         String seconds = Long.toString(duration.getSeconds() % 60);
         resultDurationParsed.append(roundStringHour(seconds));
         return resultDurationParsed.toString();
+	}
+
+	//Creamos el método roundStringHour
+	private static Object roundStringHour(String hours) {
+		return null;
 	}
 	
 }
